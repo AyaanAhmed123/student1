@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Enrollment Form</title>
+</head>
+<body>
+    <h1>Student Enrollment Form</h1>
+    <form id="studentForm" onsubmit="return false;">
+        <label for="rollNo">Roll No:</label>
+        <input type="text" id="rollNo" name="rollNo" oninput="checkPrimaryKey()" required>
+        <br>
+
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" disabled required>
+        <br>
+
+        <label for="class">Class:</label>
+        <input type="text" id="class" name="class" disabled required>
+        <br>
+
+        <label for="birthDate">Birth Date:</label>
+        <input type="date" id="birthDate" name="birthDate" disabled required>
+        <br>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" disabled required>
+        <br>
+
+        <label for="enrollmentDate">Enrollment Date:</label>
+        <input type="date" id="enrollmentDate" name="enrollmentDate" disabled required>
+        <br>
+
+        <button type="button" id="saveButton" onclick="saveData()" disabled>Save</button>
+        <button type="button" id="updateButton" onclick="updateData()" disabled>Update</button>
+        <button type="button" id="resetButton" onclick="resetForm()" disabled>Reset</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
